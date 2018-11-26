@@ -6,6 +6,7 @@ Imports
 
     // Inner
     const AuthRouterClass = require('./auth/auth.routes');
+    const MessageRouterClass = require('./message/message.route');
 //
 
 /*
@@ -24,6 +25,7 @@ Define routes
 */
     mainRouter.use('/api', apiRouter);
     apiRouter.use('/auth', authRouter.init());
+    apiRouter.use('/message', MessageRouter.init())
 //
 
 /*
